@@ -1,7 +1,12 @@
-<package>
-  <metadata>
-    ...
-  </metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+    <id>MyPackageId</id>
+    <version>1.0.0</version>
+    <description>This is a sample NuGet package.</description>
+    <authors> xyz </authors>
+</metadata>
+
   <files>
     ...
     <file src="licenses\LICENSE.txt" target="" />
