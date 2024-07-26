@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>MyPackageId</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>This is a sample NuGet package.</description>
     <authors>xyz</authors>
   </metadata>
