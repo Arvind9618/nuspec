@@ -5,8 +5,8 @@
   <files>
     ...
     <file src="licenses\LICENSE.txt" target="" />
-    <file src="..\icon.png" target="images\" />
-    <file src="..\readme.md" target="docs\" />
+    <file src="content\icon.png" target="images\" />
+    <file src=".\README.md" target="docs\" />
     ...
   </files>
 </package>
