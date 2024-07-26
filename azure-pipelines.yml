@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+      - Master
+
+pool:
+  vmImage: 'windows-latest'
+
+
+steps:
+- checkout: self
+
+- task: NuGetToolInstaller@1
+  inputs:
+    versionSpec: '>=5.0.0'
+    checkLatest: true
+
+- task: NuGetCommand@2
+  displayName: 'NuGet Pack'
+  inputs:
+    command: 'pack'
+    packagesToPack: (Build.SourcesDirectory)/001.nuspec
+    versioningScheme: 'off'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg
+    nuGetFeedType: 'internal'
+    publishVstsFeed: '9e148f3c-16a8-478a-abdd-bdfde1b7b721'
