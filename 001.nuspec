@@ -1,0 +1,12 @@
+<package>
+  <metadata>
+    ...
+  </metadata>
+  <files>
+    ...
+    <file src="licenses\LICENSE.txt" target="" />
+    <file src="..\icon.png" target="images\" />
+    <file src="..\readme.md" target="docs\" />
+    ...
+  </files>
+</package>
