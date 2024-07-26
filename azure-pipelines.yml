@@ -15,11 +15,11 @@ steps:
     versionSpec: '>=5.0.0'
     checkLatest: true
 
+
 - task: NuGetCommand@2
-  displayName: 'NuGet Pack'
   inputs:
     command: 'pack'
-    packagesToPack: (Build.SourcesDirectory)/001.nuspec
+    packagesToPack: './001.nuspec'
     versioningScheme: 'off'
 
 
